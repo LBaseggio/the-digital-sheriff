@@ -1,0 +1,93 @@
+.pageContainer {
+  background-color: #422817;
+  background-image: url("../../assets/tileable-wood-colored.png");
+}
+
+.searchBar {
+  height: 42px;
+  width: 200px;
+  margin: 15px;
+  padding: 4px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.buttonsFiltersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  margin: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonsFiltersContainer > button {
+  margin: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 900;
+  text-shadow: 1px 1px 1px #444;
+  color: #000;
+  transition: 0.2s;
+  box-shadow: 1px 1px 1px rgba(68, 68, 68, 0.4);
+  background-color: #c49651;
+  background-image: url("../../assets/wood-pattern.png");
+}
+
+.buttonsFiltersContainer button:hover {
+  cursor: grab;
+  color: #222;
+  text-shadow: 1px 1px 2px #444;
+  box-shadow: 2px 2px 22px #00000071;
+}
+
+.buttonsFiltersContainer button:active {
+  transform: translateY(3px) translateX(1px);
+}
+
+.cardsGrid {
+  display: flex;
+  flex-direction: navbar-container;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  justify-self: center;
+  align-items: center;
+  align-content: center;
+  grid-gap: 20px;
+  margin: 40px 40px 40px 40px;
+  padding: 0 0 140px 0;
+}
+
+/* ########
+################
+########################
+################################
+########################################
+################################################
+########################################
+################################
+########################
+################
+######## */
+
+@media screen and (max-width: 1440px) {
+  .cardsGrid {
+    margin: 40px 100px 40px 100px;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .cardsGrid {
+    margin: 40px 10px 40px 10px;
+    grid-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .cardsGrid {
+    margin: 0;
+    padding: 0;
+  }
+}

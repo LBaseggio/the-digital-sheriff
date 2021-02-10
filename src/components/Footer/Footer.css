@@ -1,0 +1,24 @@
+footer {
+  height: 30px;
+  text-align: center;
+}
+.sp {
+  display: inline-block;
+  width: 33%;
+  padding: 0;
+  margin: 0;
+  columns: #000000;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 920px) {
+  .sp {
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  footer {
+    display: block;
+  }
+}
